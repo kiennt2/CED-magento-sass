@@ -1,0 +1,172 @@
+@import "font-variables";
+
+// Global values
+// --------------------------------------------------
+
+// Grays
+// -------------------------
+$black:                 #000;
+$grayDarker:            #222;
+$grayDark:              #333;
+$gray:                  #555;
+$grayLight:             #999;
+$grayLighter:           #eee;
+$white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+$blue:                  #049cdb;
+$blueDark:              #0064cd;
+$green:                 #46a546;
+$red:                   #9d261d;
+$yellow:                #ffc40d;
+$orange:                #f89406;
+$pink:                  #c3325f;
+$purple:                #7a43b6;
+
+
+// Scaffolding
+// -------------------------
+$bodyBackground:            #FFFFFF;
+$mainContentBackground:     #FFFFFF;
+
+// Links
+// -------------------------
+$baseLinkColor:                 #2930FF;
+$baseLinkHover:                 darken($baseLinkColor, 15%);
+
+// Typography
+// -------------------------
+$sansFontFamily:            "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:              Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:            Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$baseFont:                  normal 14px/20px helvetica_regular, Helvetica, Arial, sans-serif;
+$baseColor:                 #171717;
+
+// Heading
+$heading_h1_font:           normal 22px/24px helvetica_bold, Helvetica, Arial, sans-serif;
+$heading_h2_font:           normal 18px/22px helvetica_bold, Helvetica, Arial, sans-serif;
+$heading_h3_font:           normal 16px/20px helvetica_bold, Helvetica, Arial, sans-serif;
+$heading_h4_font:           normal 14px/18px helvetica_bold, Helvetica, Arial, sans-serif;
+$heading_h5_font:           normal 12px/16px helvetica_bold, Helvetica, Arial, sans-serif;
+$heading_h6_font:           normal 10px/14px helvetica_bold, Helvetica, Arial, sans-serif;
+$heading_h1_color:          #333;
+$heading_h2_color:          #333;
+$heading_h3_color:          #333;
+$heading_h4_color:          #333;
+$heading_h5_color:          #333;
+$heading_h6_color:          #333;
+
+// Page Title
+$pageTitleColor:            #333;
+$pageTitleFont:             normal 30px/36px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+// Button - Default
+// -------------------------
+// if GRADIENT  button
+//$buttonStartColor:                #009FFC;
+//$buttonEndColor:                  #0079C1;
+$buttonBackground:                  transparent url(../images/bkg_btn.gif) no-repeat;
+$buttonSpanBackground:              transparent;
+$buttonSpanSpanBackground:          transparent;
+$buttonTextColor:                   #fff;
+$buttonTextShadow:                  null;
+$buttonBorder:                      1px solid #ccc;
+$buttonFont:                        normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$buttonBorderRadius:                5px;
+
+// Other Button
+// -------------------------
+//$buttonStartColor:                  #009FFC;
+//$buttonEndColor:                    #0079C1;
+//$buttonBackground:                  #333;
+//$buttonTextColor:                   #fff;
+//$buttonTextShadow:                  #ccc;
+//$buttonBorder:                      1px solid #ccc;
+//$buttonFont:                        normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$buttonBorderRadius:                5px;
+
+// Forms
+// -------------------------
+
+$inputFont:                     normal 12px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$textareaFont:                  normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$SelectFont:                    normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$inputColor:                    #333;
+$inputBackground:               #fff url(../images/bkg_input.gif) 0 0 repeat-x;
+$inputBackgroundDisabled:       #d7d7d7;
+$inputColorDisabled:            #d7d7d7;
+$inputBorder:                   1px solid #ccc;
+$inputBorderRadius:             null;
+$inputPlaceHolderColor:         #555;
+$inputPlaceHolderBackground:    #ccc;
+
+// Sprite icons path
+// -------------------------
+$iconSpritePath:          url("../images/icon-sprite.png") no-repeat;
+
+// Hr border color
+// -------------------------
+$hrBorder:                $grayLighter;
+
+// Navigation
+// -------------------------
+
+$navbarBackground:              #006DAE;
+//if GRADIENT
+//$navbarBackgroundHighlight:       #009FFD;
+//$navbarBorder:                    #0077BE;
+$navColor:                     #FFFFFF;
+$navTextShadow:                #005e94;
+$navFont:                      normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navLinkColor:                 #FFFFFF;
+$navLinkHover:                 #00457E;
+$navBackgroundHover:           #D9D9D9;
+
+// Sub Navigation
+// -------------------------
+
+$subNavbarBackground:                #E9E9E9;
+//if GRADIENT
+//$subNavbarBackgroundHighlight:       #F9F9F9;
+//$subNavbarBorder:                    #BEBEBE;
+
+$subNavColor:                     #575757;
+$subNavTextShadow:                #fff;
+$subNavFontFamily:                normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$subNavLinkColor:                 #575757;
+$subNavLinkHover:                 #575757;
+$subNavBackgroundHover:           #E9E9E9;
+
+
+// Pagination
+// -------------------------
+$paginationBackground:                #fff;
+$paginationBorder:                    1px solid #ccc;
+$paginationActiveBackground:          #f5f5f5;
+
+
+// Alerts
+// -------------------------
+
+$alertsFont:              normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$alertBorder:             1px solid #ccc;
+
+$warningText:             #3d6611;
+$warningBackground:       #fafaec;
+$warningBorder:           1px solid #fcd344;
+
+$errorText:               #d91a00;
+$errorBackground:         #fff5f3;
+$errorBorder:             1px solid #e9581f;
+
+$successText:             #3d6611;
+$successBackground:       #eff5ea;
+$successBorder:           1px solid #446423;
+
+$infoText:                #3d6611;
+$infoBackground:          #fafaec;
+$infoBorder:              1px solid #fcd344;

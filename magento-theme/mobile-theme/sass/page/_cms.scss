@@ -1,0 +1,38 @@
+.cms-home .std { display:none; }
+.cms-home section { padding-bottom:0; }
+
+.std ul,
+.std ol,
+.std dl,
+.std p,
+.std address,
+.std blockquote,
+.std table { margin-bottom:1em; }
+.std ul { list-style:disc outside; padding-left:1.5em; }
+.std ol { list-style:decimal outside; padding-left:1.5em; }
+.std ul ul { list-style-type:circle; }
+.std ul ul,
+.std ol ol,
+.std ul ol,
+.std ol ul { margin:.5em 0; }
+.std dt { font-weight:bold; }
+.std dd { padding:0 0 0 1.5em; }
+.std blockquote { font-style:italic; padding:0 0 0 1.5em; }
+.std address { font-style:normal; }
+.std b,
+.std strong { font-weight:bold; }
+.std i,
+.std em { font-style:italic; }
+.std hr { margin:1.5em 0; color:#d9d9d9; }
+.std table { width:100%; max-width:100%; }
+.std table thead { background:#e8e8e8; }
+.std table th { background:#f7f7f7; word-break:break-word; font-weight:bold; }
+.std table thead th { background:#e8e8e8; font-weight:bold; }
+.std table th,
+.std table td { padding:2px 4px; border:1px solid #d9d9d9; }
+.std table[border="0"] { border-width:0; }
+.std table[border="0"] th,
+.std table[border="0"] td { border-width:0; }
+
+ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
+.std ul.disc li { padding-left:0; background:none; }

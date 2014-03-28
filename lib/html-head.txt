@@ -1,0 +1,15 @@
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
+
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl()?>css/ie9.css" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="<?php echo $this->getSkinUrl()?>css/ie8.css" />
+<link media="all" href="<?php echo $this->getSkinUrl()?>css/css3.php?url=<?php echo $this->getSkinUrl()?>" type="text/css" rel="stylesheet"/>
+<![endif]-->

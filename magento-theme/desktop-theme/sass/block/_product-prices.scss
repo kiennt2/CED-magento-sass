@@ -1,0 +1,85 @@
+
+.price { white-space:nowrap !important; }
+
+.price-box {}
+.price-box .price { font-weight:bold; }
+
+.price-box-bundle {}
+
+/* Regular price */
+.regular-price {}
+.regular-price .price { font-weight:bold; }
+
+/* Old price */
+.old-price { text-decoration:line-through; color:#989696; }
+.old-price .price-label { white-space:nowrap; color:#989696; }
+.old-price .price { font-weight:normal; text-decoration:line-through; color:#989696; }
+.sidebar .old-price .price-label { display:none !important; }
+
+/* Special price */
+.special-price {}
+.special-price .price-label { white-space:nowrap; color:#c73615; font-weight:bold; }
+.special-price .price { font-weight:bold; color:#c73615; }
+.sidebar .special-price .price-label { display:none !important; }
+
+/* Minimal price (as low as) */
+.minimal-price {}
+.minimal-price .price-label { white-space:nowrap; }
+
+.minimal-price-link { display:block; margin:5px 0; text-decoration:none; }
+a.minimal-price-link:hover { text-decoration:underline; }
+.minimal-price-link .label { font-weight:bold; }
+.minimal-price-link .price { font-weight:bold; }
+
+/* Excluding tax */
+.price-excluding-tax { display:block; }
+.price-excluding-tax .label { white-space:nowrap; }
+.price-excluding-tax .price { font-weight:normal; }
+
+/* Including tax */
+.price-including-tax { display:block; }
+.price-including-tax .label { white-space:nowrap; }
+.price-including-tax .price { font-weight:bold; }
+
+/* Configured price */
+.configured-price {}
+.configured-price .price-label { font-weight:bold; white-space:nowrap; }
+.configured-price .price { font-weight:bold; }
+
+/* FPT */
+.weee { display:block; font-size:11px; }
+.weee .price { font-size:11px; font-weight:bold; }
+
+/* Excl tax (for order tables) */
+.price-excl-tax { display:block; }
+.price-excl-tax .label { display:block; white-space:nowrap; }
+.price-excl-tax .price { display:block; }
+
+/* Incl tax (for order tables) */
+.price-incl-tax { display:block; }
+.price-incl-tax .label { display:block; white-space:nowrap; }
+.price-incl-tax .price { display:block; font-weight:bold; }
+
+/* Price range */
+.price-from {}
+.price-from .price-label { white-space:nowrap; }
+.price-from .price { white-space:nowrap; }
+.price-to {}
+.price-to .price { white-space:nowrap; }
+.price-to .price-label { white-space:nowrap; }
+
+/* Price as configured */
+.price-as-configured {}
+.price-as-configured .price-label {white-space:nowrap; }
+.price-as-configured .price { font-size:14px; color:#e55100; }
+
+/* Price notice next to the options */
+.price-notice { padding-left:10px; }
+.price-notice .price { font-weight:bold; }
+/********** Product Prices > */
+
+/* Tier Prices */
+.product-pricing { background:#fbf4de; border:1px solid #e2d4c7; padding:8px; margin:20px 0; }
+.product-pricing li { line-height:1.35; margin:2px 0; }
+.product-pricing li .price { font-weight:bold; }
+.product-pricing li .benefit { font-weight:bold; }

@@ -1,0 +1,194 @@
+
+/* #Variable Definitions
+================================================== */
+
+//$wide-screen-width: 1200px;
+  $base-width: 960px;
+  $tablet-width: 768px;
+  $mobile-landscape-width: 480px;
+  $mobile-portrait-width: 320px;
+
+  // Fix Grid
+  $grid-width: 960px;
+  $totals-columns: 12;
+  $margin: 10px;
+
+  /* Fluid Grid
+    $grid-width: 100%;
+    $totals-columns: 12;
+    $margin: 1%;
+  */
+
+/* Mixin Media Queries
+================================================== */
+
+/*  @mixin wide-screen {
+    @media only screen and (min-width: $wide-screen-width) { @content; }
+  }
+  @mixin desktop {
+    @media only screen and (min-width: $base-width) and (max-width: $wide-screen-widt - 1) { @content; }
+  }*/
+  @mixin desktop {
+    @media only screen and (min-width: $base-width) { @content; }
+  }
+  @mixin tablet {
+    @media only screen and (min-width: $tablet-width) and (max-width: $base-width - 1) { @content; }
+  }
+  @mixin mobi-landscape {
+    @media only screen and (max-width: $tablet-width - 1) { @content; }
+  }
+  @mixin mobi-portrait {
+    @media only screen and (max-width: $mobile-landscape-width - 1) { @content; }
+  }
+
+/* #Clearing
+================================================== */
+/* Include clearfix on parent to clear nested columns,
+or wrap each row of columns in a @include row */
+@mixin clearfix {
+  zoom: 1;
+  &:after { clear: both; }
+  &:before, &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;}
+}
+/* You can also use a @include clear to clear columns */
+@mixin clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* Mixin container width
+================================================== */
+
+@mixin container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: $base-width;
+
+  @include  clearfix;
+
+/*  @include wide-screen {
+    width: $wide-screen-width;
+  }*/
+
+  @include tablet {
+    width: $tablet-width;
+  }
+
+  @include mobi-landscape {
+    width: $mobile-landscape-width;
+  }
+
+  @include mobi-portrait {
+    width: $mobile-portrait-width;
+  }
+
+}
+
+@mixin full-width {
+  width: 100%;
+}
+
+/* Grid Layout
+================================================== */
+// function math-column-width
+//  @return colum width
+
+@function math-column-width($num: 1, $width: $grid-width) {
+  @return ($num * ($width / $totals-columns)) - (2 * $margin);
+}
+
+@mixin column {
+  float: left;
+  display: inline;
+  margin-left: $margin;
+  margin-right: $margin;
+}
+
+@mixin row($marginRow: $margin) {
+  @include clearfix;
+  margin-bottom: 2 * $marginRow;
+}
+
+@mixin columns($num: 1) {
+  @include column;
+  width: math-column-width($num, $grid-width);
+}
+
+@mixin alpha { margin-left: 0; }
+@mixin omega { margin-right: 0; }
+
+/* Prefix Extra Space */
+@mixin prefix($num: 1) {
+  padding-left: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num));
+}
+
+/* Suffix Extra Space */
+@mixin suffix($num: 1) {
+  padding-right: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num));
+}
+
+/* Push Space */
+@mixin push($num: 1) {
+  margin-left: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num)) + $margin;
+  position: relative;
+}
+
+/* Pull Space */
+@mixin pull($num: 1) {
+  margin-right: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num)) + $margin;
+  position: relative;
+}
+
+/* colum base - margin = 0 */
+@mixin columns-base ($num: 1) {
+  @include column;
+  width: $num * ($grid-width / $totals-columns);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* colum offset */
+@mixin columns-offset($num: 1, $offset: $margin) {
+  @include column;
+  width: ($num * ($grid-width / $totals-columns)) - (2 * $offset);
+  padding-left: $offset;
+  padding-right: $offset;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* Other Column mixin
+================================================== */
+@mixin container-other {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: $base-width - (15px * 2);
+
+  @include clearfix;
+
+  @include tablet {
+    width: $tablet-width - (15px * 2);
+  }
+
+  @include mobi-landscape {
+    width: $mobile-landscape-width - (25px * 2);
+  }
+
+  @include mobi-portrait {
+    width: $mobile-portrait-width - (25px * 2);
+  }
+
+}

@@ -1,0 +1,26 @@
+
+.border-box {
+  @include box-sizing(border-box);
+}
+
+.bg-shadow {
+  background:url(../images/bg_shadow.png) repeat-x 0 0;
+  @include retina-display {
+    background:url(../images/bg_shadow_retina.png) repeat-x 0 0;
+  }
+}
+
+.text-shadow-black {
+  @include text-shadow(1px 1px 0 #6d6b6b);
+}
+
+.clearfix:after {
+  display:block;
+  content:".";
+  clear:both;
+  font-size:0;
+  line-height:0;
+  height:0;
+  overflow:hidden;
+  zoom: 1;
+}

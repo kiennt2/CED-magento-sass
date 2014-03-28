@@ -1,0 +1,27 @@
+body > footer { min-height:100px; }
+body > address.copyright { color:#fff; line-height:18px; padding:15px; }
+body > address.copyright .logo { float:left; margin:0 10px 0 0; }
+body > footer ul { line-height:27px; padding:10px 15px 0; overflow:hidden; }
+body > footer ul + ul { padding:0 15px 10px; }
+body > footer ul li { box-sizing:border-box; float:left; width:50%; }
+body > footer ul li a { color:#fff; display:inline-block; padding:2px; }
+
+.form-subscribe { padding:10px 15px; }
+.form-subscribe .form-subscribe-header { margin:0 0 5px; padding-left:12px; }
+.form-subscribe .v-fix { display:inline-block; vertical-align:top; width:60%; }
+.form-subscribe .v-fix input { border-radius:15px; border-color:#ccc; font-size:18px; padding:5px 10px; }
+.form-subscribe .validation-advice { padding:10px 0 0 12px; width:150%; }
+.form-subscribe button {
+  border:none;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  border-radius:20px;
+  color:#fff;
+  font-size:18px;
+  padding:5px 10px;
+  vertical-align:top;
+  width:35%;
+
+  -webkit-appearance:none;
+  appearance:none;
+}
