@@ -1,0 +1,54 @@
+
+/* Data Table */
+.table-caption { border:1px solid #ddd; border-bottom:0; margin:-1px 0 0; background:#fff url(../images/bkg_block-title.gif) 0 100% repeat-x; font:14px/1.25 Arial, Helvetica, sans-serif; padding:3px 7px 4px; color:#444; }
+.table-caption a { font-size:11px; text-transform:lowercase; }
+.data-table { border:1px solid #d9d9d9; border-bottom:0; width:100%; border-collapse:separate; }
+.data-table th { padding:5px 12px; color:#2d2d2d; border-bottom:1px solid #d9d9d9; font-weight:normal; text-transform:uppercase; white-space:nowrap; }
+.data-table td { padding:5px 12px; }
+.data-table thead { background:#e8e8e8 url(../images/bkg_thead.gif) repeat-x 0 0; font-size:11px; }
+.data-table tbody {}
+.data-table tfoot { background-color:#ededed; }
+.data-table tfoot td { padding:5px 12px; }
+.data-table tfoot th { border:none; text-transform:none; }
+.data-table tr.first {}
+.data-table tr.last {}
+.data-table tr.last th,
+.data-table tr.last td { border-bottom:1px solid #d9d9d9; }
+.data-table tr:last-child td,
+.data-table tr:last-child th { border-bottom:1px solid #d9d9d9; }
+.data-table tbody tr:nth-child(odd),
+.data-table tr.odd { background-color:#fff; }
+.data-table tbody tr:nth-child(even),
+.data-table tr.even { background-color:#fafafa; }
+.data-table tbody.odd {}
+.data-table tbody.odd td { border-width:0 1px; }
+.data-table tbody.even { background-color:#f5f5f5; }
+.data-table tbody.even td { border-width:0 1px; }
+.data-table tbody.odd tr.border td,
+.data-table tbody.even tr.border td { border-bottom-width:1px; }
+.data-table th .tax-flag { white-space:nowrap; font-weight:normal; }
+.data-table td.label,
+.data-table th.label { font-weight:bold; text-transform:none; border-color:#fff; background-color:#f7f7f7; }
+.data-table td.value { float:none !important; }
+.data-table .link-rss { display:block; }
+
+.page-popup .data-table td,
+.page-popup .data-table th { border-bottom:1px solid #d9d9d9; }
+.page-popup .buttons-set .button { float:right; }
+
+/* Shopping cart total summary row expandable to details */
+tr.summary-total { cursor:pointer; }
+tr.summary-total td {}
+tr.summary-total .summary-collapse { float:right; text-align:right; padding-left:20px; background:url(../images/bkg_collapse.gif) 0 4px no-repeat; cursor:pointer; }
+tr.show-details .summary-collapse { background-position:0 -53px; }
+tr.show-details td {}
+tr.summary-details td { background-color:#ede9e6; font-size:12px; padding:5px !important; }
+tr.summary-details-first td {}
+tr.summary-details-excluded { font-style:italic; }
+
+/* Shopping cart tax info */
+.cart-tax-info,
+.cart-tax-info .cart-price { display:block; padding-right:20px; }
+.cart-tax-total { display:block; padding-right:20px; background:url(../images/bkg_collapse.gif) 100% 3px no-repeat; cursor:pointer; }
+.cart-tax-total-expanded { background-position:100% -54px; }
+
