@@ -222,6 +222,11 @@ textarea {
 /* TEXT SHADOW */
 /* TRANSFORM  */
 /* TRANSITION */
+/* #Clearing
+================================================== */
+/* Include clearfix on parent to clear nested columns,
+or wrap each row of columns in a @include row */
+/* You can also use a @include clear to clear columns */
 @font-face {
   font-family: "helvetica-regular";
   src: url("../fonts/helvetica-regular.eot");
@@ -262,11 +267,6 @@ textarea {
 ------------------------------------------------------------- */
 /* #Variable Definitions
 ================================================== */
-/* Fluid Grid
-  $grid-width: 100%;
-  $totals-columns: 12;
-  $margin: 1%;
-*/
 /* Mixin Media Queries
 ================================================== */
 /*  @mixin wide-screen {
@@ -275,13 +275,13 @@ textarea {
   @mixin desktop {
     @media only screen and (min-width: $base-width) and (max-width: $wide-screen-widt - 1) { @content; }
   }*/
-/* #Clearing
+/* #Variable Definitions
 ================================================== */
-/* Include clearfix on parent to clear nested columns,
-or wrap each row of columns in a @include row */
-/* You can also use a @include clear to clear columns */
-/* Mixin container width
-================================================== */
+/* Fluid Grid
+  $grid-width: 100%;
+  $totals-columns: 12;
+  $gutter: 1%;
+*/
 /* Grid Layout
 ================================================== */
 /* Prefix Extra Space */
@@ -289,9 +289,27 @@ or wrap each row of columns in a @include row */
 /* Push Space */
 /* Pull Space */
 /* colum base - margin = 0 */
-/* colum offset */
+/* create or custom  grid */
+/* Mixin container width
+================================================== */
 /* Other Column mixin
 ================================================== */
+/*@mixin container-other {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: $base-width - (15px * 2);
+  @include clearfix;
+  @include tablet {
+    width: $tablet-width - (15px * 2);
+  }
+  @include mobi-landscape {
+    width: $mobile-landscape-width - (25px * 2);
+  }
+  @include mobi-portrait {
+    width: $mobile-portrait-width - (25px * 2);
+  }
+}*/
 /* Layout ================================================================================ */
 .wrapper {
   width: 100%; }
@@ -430,7 +448,6 @@ or wrap each row of columns in a @include row */
   margin-left: 10px;
   margin-right: 10px;
   width: 460px; }
-
 .col3-layout .col-wrapper {
   float: left;
   display: inline;
@@ -438,7 +455,6 @@ or wrap each row of columns in a @include row */
   margin-right: 10px;
   width: 700px;
   float: left; }
-
 .col3-layout .col-wrapper .col-main {
   float: left;
   display: inline;
@@ -455,7 +471,6 @@ or wrap each row of columns in a @include row */
   margin-right: 10px;
   width: 460px;
   float: left; }
-
 .col2-set .col-2 {
   float: left;
   display: inline;
@@ -463,22 +478,18 @@ or wrap each row of columns in a @include row */
   margin-right: 10px;
   width: 460px;
   float: right; }
-
 .col2-set .col-narrow {
   width: 32%; }
-
 .col2-set .col-wide {
   width: 65%; }
 
 .col3-set .col-1 {
   float: left;
   width: 32%; }
-
 .col3-set .col-2 {
   float: left;
   width: 32%;
   margin-left: 2%; }
-
 .col3-set .col-3 {
   float: right;
   width: 32%; }
@@ -486,16 +497,13 @@ or wrap each row of columns in a @include row */
 .col4-set .col-1 {
   float: left;
   width: 23.5%; }
-
 .col4-set .col-2 {
   float: left;
   width: 23.5%;
   margin: 0 2%; }
-
 .col4-set .col-3 {
   float: left;
   width: 23.5%; }
-
 .col4-set .col-4 {
   float: right;
   width: 23.5%; }

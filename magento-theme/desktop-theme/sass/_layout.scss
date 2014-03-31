@@ -1,60 +1,98 @@
+/* Mixin container width
+================================================== */
+@mixin container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: $base-width;
+  @include  clearfix;
+  /*  @include wide-screen {
+      width: $wide-screen-width;
+    }*/
+  @include tablet {
+    width: $tablet-width;
+  }
+  @include mobi-landscape {
+    width: $mobile-landscape-width;
+  }
+  @include mobi-portrait {
+    width: $mobile-portrait-width;
+  }
+}
+
+/* Other Column mixin
+================================================== */
+/*@mixin container-other {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: $base-width - (15px * 2);
+  @include clearfix;
+  @include tablet {
+    width: $tablet-width - (15px * 2);
+  }
+  @include mobi-landscape {
+    width: $mobile-landscape-width - (25px * 2);
+  }
+  @include mobi-portrait {
+    width: $mobile-portrait-width - (25px * 2);
+  }
+}*/
 
 /* Layout ================================================================================ */
 
-.wrapper                              { @include full-width; }
+.wrapper                                  { @include full-width; }
 
 .main-container ,
 .main ,
 .footer ,
 .header ,
 .footer-container ,
-#nav                                  { @include container; }
+#nav                                        { @include container; }
 
 .page {}
-.page-print                           { background:#fff; padding:25px 30px; text-align:left; }
-.page-empty                           { background:#fff; padding:20px;      text-align:left; }
-.page-popup                           { background:#fff; padding:25px 30px; text-align:left; }
+.page-print                                { background:#fff; padding:25px 30px; text-align:left; }
+.page-empty                             { background:#fff; padding:20px;      text-align:left; }
+.page-popup                             { background:#fff; padding:25px 30px; text-align:left; }
 
 /* Base Columns */
-.col-left                             { @include columns(3); float:left;  }
-.col-main                             { @include columns(6); float:left; }
-.col-right                            { @include columns(3); float:right; }
+.col-left                                     { @include columns(3); float:left;  }
+.col-main                                  { @include columns(6); float:left; }
+.col-right                                   { @include columns(3); float:right; }
 
 /* 1 Column Layout */
-.col1-layout .col-main                { @include columns(12); }
+.col1-layout .col-main                 { @include columns(12); }
 
 /* 2 Columns Layout */
-.col2-left-layout .col-main           { @include columns(9); float:right }
+.col2-left-layout .col-main            { @include columns(9); float:right }
 .col2-right-layout .col-main          { @include columns(9);}
 
 /* 3 Columns Layout */
-.col3-layout .col-main                { @include columns(6); }
-.col3-layout .col-wrapper             { @include columns(9); float:left;  }
-.col3-layout .col-wrapper .col-main   { @include columns(6); float:right; }
+.col3-layout {
+  .col-main                      { @include columns(6); }
+  .col-wrapper                  { @include columns(9); float:left;  }
+  .col-wrapper .col-main    { @include columns(6); float:right; }
+}
 
 /* Content Columns */
-.col2-set .col-1                      { @include columns(6); float:left;  }
-.col2-set .col-2                      { @include columns(6); float:right; }
-.col2-set .col-narrow                 { width:32%; }
-.col2-set .col-wide                   { width:65%; }
+.col2-set {
+  .col-1                      { @include columns(6); float:left;  }
+  .col-2                      { @include columns(6); float:right; }
+  .col-narrow              { width:32%; }
+  .col-wide                 { width:65%; }
+}
 
-.col3-set .col-1                      { float:left;  width:32%; }
-.col3-set .col-2                      { float:left;  width:32%; margin-left:2%; }
-.col3-set .col-3                      { float:right; width:32%; }
+.col3-set {
+  .col-1                      { float:left;  width:32%; }
+  .col-2                      { float:left;  width:32%; margin-left:2%; }
+  .col-3                      { float:right; width:32%; }
+}
 
 .col4-set  {
   .col-1                      { float:left;  width:23.5%; }
   .col-2                      { float:left;  width:23.5%; margin:0 2%; }
   .col-3                      { float:left;  width:23.5%; }
   .col-4                      { float:right; width:23.5%; }
-  @include tablet {
-    .col-1                      { float:left;  width:23.5%; }
-    .col-2                      { float:left;  width:23.5%; margin:0 2%; }
-    .col-3                      { float:left;  width:23.5%; }
-    .col-4                      { float:right; width:23.5%; }
-  }
 }
 
 /* ======================================================================================= */
-
-

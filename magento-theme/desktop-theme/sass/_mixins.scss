@@ -397,3 +397,29 @@
 @mixin link-bg-hover($content){
   &:hover,&:active,&:focus { background: $content;}
 }
+
+
+/* #Clearing
+================================================== */
+/* Include clearfix on parent to clear nested columns,
+or wrap each row of columns in a @include row */
+@mixin clearfix {
+  zoom: 1;
+  &:after { clear: both; }
+  &:before, &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;}
+}
+/* You can also use a @include clear to clear columns */
+@mixin clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
