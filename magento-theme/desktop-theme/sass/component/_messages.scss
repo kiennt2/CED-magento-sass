@@ -1,25 +1,32 @@
 
 /* Global Messages */
-.messages { width:100%; overflow:hidden; text-align:left; margin-top:10px; }
-.messages li { margin:0 0 10px; padding:0; word-wrap:break-word; }
-.messages ul { padding:10px 17px 18px; margin:0 0 -11px;position:relative; }
-.messages ul li { margin:0; padding:0 0 3px; }
-.messages a { text-decoration:underline; }
-.messages a:hover { text-decoration:none; }
-.messages li.error-msg,
-.messages li.success-msg,
-.messages li.note-msg,
-.messages li.notice-msg { border:$alertBorder !important; font:$alertsFont !important; }
+.messages { width:100%; overflow:hidden; text-align:left; margin-top:10px;
+  li { margin:0 0 10px; padding:0; word-wrap:break-word; }
+  ul { padding:10px 17px 18px; margin:0 0 -11px;position:relative; }
+  ul li { margin:0; padding:0 0 3px; }
+  a { text-decoration:underline; }
+  a:hover { text-decoration:none; }
+  li.error-msg,
+  li.success-msg,
+  li.note-msg,
+  li.notice-msg { border:$alertBorder !important; font:$alertsFont !important; }
+}
+
 p.error-msg { border:$errorBorder !important;font:$alertsFont !important;  padding:10px; margin:10px 0; }
+
 /* Error Message */
-.messages li.error-msg { border: $errorBorder; background: $errorBackground; color:$errorText; }
-.messages li.error-msg a { color:$errorText; }
-.messages li.error-msg ul { /* background-image:url(../images/bkg_msg-error.gif); */ }
+.messages li.error-msg { border: $errorBorder; background: $errorBackground; color:$errorText;
+  a { color:$errorText; }
+  ul { /* background-image:url(../images/bkg_msg-error.gif); */ }
+}
 p.error-msg { border: $errorBorder; background-color:$errorBackground; color:$errorText; }
+
 /* Success Message */
-.messages li.success-msg { border:$successBorder; background-color:$successBackground; color:$successText; }
-.messages li.success-msg a { color:$successText; }
-.messages li.success-msg ul { /* background-image:url(../images/bkg_msg-success.gif); */ }
+.messages li.success-msg { border:$successBorder; background-color:$successBackground; color:$successText;
+  a { color:$successText; }
+  ul { /* background-image:url(../images/bkg_msg-success.gif); */ }
+}
+
 /* Notification Message */
 .messages li.note-msg { border:$infoBorder; background-color:$infoBackground; color:$infoText; }
 .messages li.note-msg a { color:$infoText; }

@@ -210,6 +210,14 @@
     text-shadow:  $params;
 }
 
+/* TEXT SHADOW */
+@mixin text-size-adjust($content) {
+  -webkit-text-size-adjust: $content;
+  -moz-text-size-adjust: $content;
+  -ms-text-size-adjust: $content;
+  text-size-adjust: $content;
+}
+
 /* TRANSFORM  */
 @mixin transform($params) {
     -webkit-transform: $params;

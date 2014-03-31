@@ -2,29 +2,40 @@
 
 .account-login { position:relative; font-size:12px; background:url(../images/bkg_cols.gif) repeat-y 266px 0; min-height:350px; margin-bottom:-20px; }
 
-.login-only { background:none; }
-.login-only .registered-users { float:none; margin:0 auto; }
+.login-only { background:none;
+  .registered-users { float:none; margin:0 auto; }
+}
 
-.account-login .new-users,
-.account-login .registered-users { width:381px; padding:30px 32px 30px; }
-.account-login .registered-users p { margin-bottom:1.5em; }
-.account-login .spacer { position:absolute; top:100%; left:447px; margin-top:-1px; width:16px; height:3px; font-size:0; line-height:0; background:#fff; overflow:hidden; }
-.account-login .fieldset { margin:0; }
-.account-login .fieldset h2 { margin-bottom:.5em; }
-.account-login .form-list label,
-.account-login .form-list span.label { width:98px; }
-.account-login p.required,
-.account-login .btn-only { padding-left:113px; width:230px; text-align:right; }
-.account-login .btn-only a { float:left; white-space:nowrap; }
-.account-login .form-list input.input-text { width:224px; }
-.account-login .form-list p { padding:0 0 0 110px; }
-.account-login .form-list li.note { float:left; padding-left:113px; margin:0 0 9px; width:auto; clear:left; }
-.account-login .form-list li.note a { font-size:12px; }
-.account-login .form-list li.control { float:left; clear:left; }
-li#remember-me-box.control { white-space:nowrap; }
-li#remember-me-box.control label { margin-right:20px; white-space:normal; }
+.account-login {
+  .new-users,
+  .registered-users { width:381px; padding:30px 32px 30px; }
+  .registered-users p { margin-bottom:1.5em; }
+  .spacer { position:absolute; top:100%; left:447px; margin-top:-1px; width:16px; height:3px; font-size:0; line-height:0; background:#fff; overflow:hidden; }
+  .fieldset { margin:0;
+    h2 { margin-bottom:.5em; }
+  }
+  p.required,
+  .btn-only { padding-left:113px; width:230px; text-align:right; }
+  .btn-only a { float:left; white-space:nowrap; }
+  .form-list {
+    label,
+    span.label { width:98px; }
+    input.input-text { width:224px; }
+    p { padding:0 0 0 110px; }
+    li.note { float:left; padding-left:113px; margin:0 0 9px; width:auto; clear:left; }
+    li.note a { font-size:12px; }
+    li.control { float:left; clear:left; }
+  }
+}
+
+li#remember-me-box.control { white-space:nowrap;
+  label { margin-right:20px; white-space:normal; }
+}
+
 .account-login .form-list li.control .input-box { margin-left:113px; }
+
 li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; line-height:16px; padding-top:2px; white-space:normal; }
+
 .account-login .form-list li.buttons-set { float:right; clear:none; padding-right:38px; padding-top:2px; }
 
 .account-create {}
@@ -32,19 +43,28 @@ li#remember-me-box.control .link-tip { display:inline-block; font-size:11px; lin
 
 
 /* Popup Dialog Block */
-.window-overlay { background:#000; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; }
-.window-overlay { position:absolute; top:0; left:0; min-height:100%; background:#000; opacity:0.5; width:100%; z-index:990; display:none; }
-.window-overlay.active { display:block; }
-.popup-block { border:1px solid #cfcfcf; left:50%; top:40%; position:absolute; margin:-85px 0 0 -250px; width:500px; text-align:left; -moz-box-shadow:0 0 6px #000; -webkit-box-shadow:0 0 6px #000; box-shadow:0 0 6px #000; z-index:1000; position:fixed; display:none; }
-.popup-block.active { display:block; }
-.popup-block .block-title { background:url(../images/bkg_page-title.gif) repeat-x scroll 0 0 #F6F6F6; border-bottom:1px solid #CFCFCF; padding:17px 17px 10px; }
-.popup-block div.btn-close { background:url(../images/btn_window_close.gif) no-repeat; display:block; position:absolute; top:19px; right:17px; height:15px; width:15px; text-indent:-9999em; cursor:pointer; }
-.popup-block .block-title strong { color:#D12C01; font-size:16px; font-weight:normal; }
-.popup-block .block-content { padding:17px 17px 25px; background:url(../images/bkg_block.gif) repeat-x 0 100% #fff; font-size:12px;  }
-.popup-block .block-content .form-list label { width:180px; }
-.popup-block .block-content .form-list .input-text { width:230px; }
-.popup-block .block-content .form-list .control .input-box { margin-left:195px; }
-.popup-block .block-content .form-buttons { width:auto; padding-left:188px; padding-top:10px; }
-.popup-block .block-content .form-buttons .button { float:left; }
-.popup-block.loading .block-content * { text-align:left; text-indent:-99999em; overflow:hidden; position:relative; margin-left:-9999em; }
-.popup-block.loading .block-content:before { content:''; display:block; background:url(../images/opc-ajax-loader.gif) no-repeat 0 50%; position:absolute; z-index:99; top:50%; left:50%; line-height:16px; padding:16px; text-indent:0!important; }
+.window-overlay { background:#000; -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)"; position:absolute; top:0; left:0; min-height:100%; background:#000; opacity:0.5; width:100%; z-index:990; display:none;
+  &.active { display:block; }
+}
+
+.popup-block { border:1px solid #cfcfcf; left:50%; top:40%; position:absolute; margin:-85px 0 0 -250px; width:500px; text-align:left; -moz-box-shadow:0 0 6px #000; -webkit-box-shadow:0 0 6px #000; box-shadow:0 0 6px #000; z-index:1000; position:fixed; display:none;
+  &.active { display:block; }
+  .block-title { background:url(../images/bkg_page-title.gif) repeat-x scroll 0 0 #F6F6F6; border-bottom:1px solid #CFCFCF; padding:17px 17px 10px; }
+  div.btn-close { background:url(../images/btn_window_close.gif) no-repeat; display:block; position:absolute; top:19px; right:17px; height:15px; width:15px; text-indent:-9999em; cursor:pointer; }
+  .block-title strong { color:#D12C01; font-size:16px; font-weight:normal; }
+  .block-content { padding:17px 17px 25px; background:url(../images/bkg_block.gif) repeat-x 0 100% #fff; font-size:12px;
+    .form-list {
+      label { width:180px; }
+      .input-text { width:230px; }
+      .control .input-box { margin-left:195px; }
+    }
+    .form-buttons { width:auto; padding-left:188px; padding-top:10px;
+      .button { float:left; }
+    }
+  }
+}
+
+.popup-block.loading .block-content {
+  * { text-align:left; text-indent:-99999em; overflow:hidden; position:relative; margin-left:-9999em; }
+  &:before { content:''; display:block; background:url(../images/opc-ajax-loader.gif) no-repeat 0 50%; position:absolute; z-index:99; top:50%; left:50%; line-height:16px; padding:16px; text-indent:0!important; }
+}

@@ -1,18 +1,20 @@
 
 /* Page Heading */
-.page-title { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf; }
-.page-title .link-rss { float:right; margin-top:8px; }
-.page-title h1,
-.page-title h2 { font: $pageTitleFont; color: $pageTitleColor; }
+.page-title { margin-bottom:20px; padding:23px 20px 11px; background:#f6f6f6 url(../images/bkg_page-title.gif) repeat-x 0 0; border-bottom:1px solid #cfcfcf;
+  .link-rss { float:right; margin-top:8px; }
+  h1,
+  h2 { font: $pageTitleFont; color: $pageTitleColor; }
+}
 
-.title-buttons { text-align:right; }
-.title-buttons h1,
-.title-buttons h2,
-.title-buttons h3,
-.title-buttons h4,
-.title-buttons h5,
-.title-buttons h6 { float:left; }
-.title-buttons .link-print { float:right; margin-top:4px; }
+.title-buttons { text-align:right;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 { float:left; }
+  .link-print { float:right; margin-top:4px; }
+}
 
 .subtitle { clear:both; padding:10px 0; font-size:18px; color:#d12c01; }
 
