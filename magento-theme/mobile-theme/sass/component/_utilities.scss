@@ -1,4 +1,10 @@
 
+.std { clear:both; margin:10px 0; }
+
+.a-left { text-align:left; }
+.a-center { text-align:center; }
+.a-right { text-align:right; }
+
 .border-box {
   @include box-sizing(border-box);
 }

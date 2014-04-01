@@ -392,6 +392,14 @@
   white-space: nowrap;
 }
 
+@mixin appearance($value){
+  -webkit-appearance: $value;
+  -moz-appearance:    $value;
+  -ms-appearance:      $value;
+  -o-appearance:         $value;
+  appearance:             $value;
+}
+
 //Link
 @mixin link-make($link-color, $link-hover, $underline: false) {
   color: $link-color;

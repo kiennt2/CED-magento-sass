@@ -1,71 +1,27 @@
-body > nav {
-  background: $navbarBackground;
-  color: $navColor;
-  font: $navFont;
+body > nav { background: $navbarBackground; color: $navColor; font: $navFont;
   @if $navTextShadow != null {
     @include text-shadow($navTextShadow);
   }
-}
-body > nav a {
-  color: $navLinkColor;
-  display:block;
-  padding:9px 2px 7px;
-  position:relative;
-  font-size:16px;
-}
-
-body > nav ul {
-  display:table;
-  width:100%;
-}
-
-body > nav li {
-  border-width:0 7px 0 7px;
-  -webkit-border-image:url(../images/bg_nav_brd_inactive.png) 0 7 0 repeat stretch;
-  display:table-cell;
-  text-align:center;
-  text-shadow:0 1px 1px rgba(0, 0, 0, 0.8);
-  vertical-align:top;
-  width:25%;
-  -webkit-box-sizing:border-box;
-}
-
-body > nav span {
-  background:-webkit-gradient(
-      linear,
-      0 0,
-      0 100%,
-      color-stop(1, #af0002),
-      color-stop(0.62, #e1262f),
-      color-stop(0.6, #e75159),
-      color-stop(0, #f6bec1)
-  );
-  border:2px solid #fff;
-  border-radius:15px;
-  display:inline-block;
-  color:#fff;
-  font-size:14px;
-  font-weight:bold;
-  line-height:16px;
-  padding:0 5px;
-  position:absolute;
-  right:-5px;
-  top:-5px;
-  -webkit-box-shadow:0 3px 3px #000;
-  box-shadow:0 3px 3px #000;
-}
-
-body > nav .active {
-  border-width:0 12px 0 12px;
-  -webkit-border-image:url(../images/bg_nav_brd.png) 0 13 0 13 stretch stretch;
-  font-weight:bold;
-}
-
-body > nav .active a {
-  color:$navLinkHover;
-  @if $navBackgroundHover != null {
-    background: $navBackgroundHover;
+  a { color: $navLinkColor; display:block; padding:9px 2px 7px; position:relative; font-size:16px; }
+  ul { display:table; width:100%; }
+  li { border-width:0 7px 0 7px; -webkit-border-image:url(../images/bg_nav_brd_inactive.png) 0 7 0 repeat stretch; display:table-cell; text-align:center; text-shadow:0 1px 1px rgba(0, 0, 0, 0.8); vertical-align:top; width:25%;@include box-sizing(border-box);}
+  span {
+    background:-webkit-gradient(
+        linear,
+        0 0,
+        0 100%,
+        color-stop(1, #af0002),
+        color-stop(0.62, #e1262f),
+        color-stop(0.6, #e75159),
+        color-stop(0, #f6bec1)
+    );
+    border:2px solid #fff; border-radius:15px; display:inline-block; color:#fff; font-size:14px; font-weight:bold; line-height:16px; padding:0 5px; position:absolute; right:-5px; top:-5px; @include box-shadow(0 3px 3px #000);
   }
-  font-weight:normal;
-  text-shadow:0 1px 1px #ccc;
+  .active { border-width:0 12px 0 12px; -webkit-border-image:url(../images/bg_nav_brd.png) 0 13 0 13 stretch stretch; font-weight:bold;
+    a {  color:$navLinkHover; font-weight:normal; text-shadow:0 1px 1px #ccc;
+      @if $navBackgroundHover != null {
+        background: $navBackgroundHover;
+      }
+    }
+  }
 }

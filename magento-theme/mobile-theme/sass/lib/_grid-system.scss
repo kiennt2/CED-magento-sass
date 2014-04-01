@@ -1,0 +1,129 @@
+/* #Variable Definitions
+================================================== */
+
+  // Fix Grid
+  $grid-width: 960px;
+  $totals-columns: 12;
+  $gutter: 10px;
+
+  /* Fluid Grid
+    $grid-width: 100%;
+    $totals-columns: 12;
+    $gutter: 1%;
+  */
+
+@mixin full-width {
+  width: 100%;
+}
+
+/* Grid Layout
+================================================== */
+// function math-column-width
+//  @return colum width
+
+@function math-column-width($num: 1, $width: $grid-width) {
+  @return ($num * ($width / $totals-columns)) - (2 * $gutter);
+}
+
+@mixin column {
+  float: left;
+  display: inline;
+  margin-left: $gutter;
+  margin-right: $gutter;
+}
+
+@mixin column-padding {
+  float: left;
+  display: inline;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  @include box-sizing(content-box);
+}
+
+@mixin row($gutterRow: $gutter) {
+  @include clearfix;
+  margin-bottom: 2 * $gutterRow;
+}
+
+@mixin columns($num: 1, $padding: false) {
+  @if not $padding {
+    @include column;
+  } @else {
+    @include column-padding;
+  }
+  width: math-column-width($num, $grid-width);
+}
+// Example
+//  3 col - margin: 0 $gutter
+//.columns-x { @include columns(3) }
+//  3 col - padding: 0 $gutter
+//.columns-x { @include columns(3,true) }
+
+@mixin alpha { margin-left: 0; }
+@mixin omega { margin-right: 0; }
+
+/* Prefix Extra Space */
+@mixin prefix($num: 1) {
+  padding-left: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num));
+}
+
+/* Suffix Extra Space */
+@mixin suffix($num: 1) {
+  padding-right: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num));
+}
+
+/* Push Space */
+@mixin push($num: 1) {
+  margin-left: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num)) + $gutter;
+  position: relative;
+}
+
+/* Pull Space */
+@mixin pull($num: 1) {
+  margin-right: $grid-width - ($grid-width - (($grid-width / $totals-columns) * $num)) + $gutter;
+  position: relative;
+}
+
+/* colum base - margin = 0 */
+@mixin columns-base ($num: 1) {
+  @include column;
+  width: $num * ($grid-width / $totals-columns);
+  margin-left: 0;
+  margin-right: 0;
+}
+
+// Example
+//.column-4 { @include columns-base(4) }
+//.column-5 { @include columns(4) }
+//.column-6 { @include columns(4,true) }
+//...
+
+/* create or custom  grid */
+@mixin span-grid($num: 4, $gridCol: 16, $gridWidth: 100%, $gutter: false, $padding: false) {
+  float: left;
+  display: inline;
+  @if not $gutter {
+    width: $num * ($gridWidth / $gridCol);
+  } @else {
+    @if not $padding {
+      width: ($num * ($gridWidth / $gridCol)) - (2 * $gutter);
+      margin-left: $gutter;
+      margin-right: $gutter;
+    } @else {
+      width: $num * ($gridWidth / $gridCol);
+      padding-left: $gutter;
+      padding-right: $gutter;
+      @include box-sizing(border-box);
+    }
+  }
+}
+
+// Example
+//  4 col - grid 12 - margin 0 - padding 0
+//.new-grid { @include span-grid(4, 12) }
+
+//  4 col - grid 12 - width 100% - margin-left 1% - margin-right 1%
+//.new-grid { @include span-grid(4, 12, 100%, 2%) }
+
+//  4 col - grid 12 - width 100% - padding-left 1% - padding-right 1% - margin 0
+//.new-grid { @include span-grid(4, 12, 100%, 2%, true) }

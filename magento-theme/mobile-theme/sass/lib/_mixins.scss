@@ -210,6 +210,14 @@
     text-shadow:  $params;
 }
 
+/* TEXT SHADOW */
+@mixin text-size-adjust($content) {
+  -webkit-text-size-adjust: $content;
+  -moz-text-size-adjust: $content;
+  -ms-text-size-adjust: $content;
+  text-size-adjust: $content;
+}
+
 /* TRANSFORM  */
 @mixin transform($params) {
     -webkit-transform: $params;
@@ -384,6 +392,14 @@
   white-space: nowrap;
 }
 
+@mixin appearance($value){
+  -webkit-appearance: $value;
+  -moz-appearance:    $value;
+  -ms-appearance:      $value;
+  -o-appearance:         $value;
+  appearance:             $value;
+}
+
 //Link
 @mixin link-make($link-color, $link-hover, $underline: false) {
   color: $link-color;
@@ -396,4 +412,30 @@
 
 @mixin link-bg-hover($content){
   &:hover,&:active,&:focus { background: $content;}
+}
+
+
+/* #Clearing
+================================================== */
+/* Include clearfix on parent to clear nested columns,
+or wrap each row of columns in a @include row */
+@mixin clearfix {
+  zoom: 1;
+  &:after { clear: both; }
+  &:before, &:after {
+    content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;}
+}
+/* You can also use a @include clear to clear columns */
+@mixin clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
 }

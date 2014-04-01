@@ -628,7 +628,11 @@ body {
   background: white;
   font: normal 14px/20px helvetica_regular, Helvetica, Arial, sans-serif;
   color: #171717;
-  text-align: center; }
+  text-align: center;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none; }
 
 a {
   color: #2930ff;

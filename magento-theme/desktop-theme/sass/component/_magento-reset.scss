@@ -24,7 +24,7 @@
  */
 /* Reset ================================================================================= */
 
-body          { background:$bodyBackground; font: $baseFont; color: $baseColor; text-align:center; }
+body          { background:$bodyBackground; font: $baseFont; color: $baseColor; text-align:center; @include text-size-adjust(none);}
 
 a             { color: $baseLinkColor; text-decoration:underline; }
 a:hover       { text-decoration:none; color: $baseLinkHover;}
