@@ -5,18 +5,18 @@
 */
 
 // CSS Reset
-@import "reset";
+@import "component/reset";
 
 // Core variables and mixins ...
-@import "variables"; // Modify this for custom colors, font-sizes, etc
-@import "mixins";
-@import "fonts";
-@import "font-variables";
-@import "retina-display";
-@import "media-queries";
-@import "grid-system";
-@import "layout";
-@import "utilities";
+@import "lib/variables"; // Modify this for custom colors, font-sizes, etc
+@import "lib/mixins";
+@import "lib/fonts";
+@import "lib/font-variables";
+@import "lib/retina-display";
+@import "lib/media-queries";
+@import "lib/grid-system";
+@import "component/layout";
+@import "component/utilities";
 
 @import "component/magento-reset";
 @import "component/magento-tool";

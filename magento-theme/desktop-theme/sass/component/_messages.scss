@@ -28,14 +28,18 @@ p.error-msg { border: $errorBorder; background-color:$errorBackground; color:$er
 }
 
 /* Notification Message */
-.messages li.note-msg { border:$infoBorder; background-color:$infoBackground; color:$infoText; }
-.messages li.note-msg a { color:$infoText; }
-.messages li.notice-msg { border:$warningBorder; background-color:$warningBackground; color:$warningText; }
-.messages li.notice-msg a { color:$warningText; }
-.messages li.note-msg ul,
-.messages li.notice-msg ul { /* background-image:url(../images/bkg_msg-note.gif); */ }
+.messages {
+  li.note-msg { border:$infoBorder; background-color:$infoBackground; color:$infoText;
+    a { color:$infoText; }
+  }
+  li.notice-msg { border:$warningBorder; background-color:$warningBackground; color:$warningText;
+    a { color:$warningText; }
+  }
+  li.note-msg ul,
+  li.notice-msg ul { /* background-image:url(../images/bkg_msg-note.gif); */ }
+}
 
 /* std class reset */
-.std .messages { margin-top:0; }
-.std .messages { width:auto; list-style:none !important; padding:0 !important; margin-bottom:0 !important; }
-.std .messages ul { list-style:none !important; padding-left:17px !important; margin:0 0 -11px !important; }
+.std .messages { margin-top:0; width:auto; list-style:none !important; padding:0 !important; margin-bottom:0 !important;
+  ul { list-style:none !important; padding-left:17px !important; margin:0 0 -11px !important; }
+}
