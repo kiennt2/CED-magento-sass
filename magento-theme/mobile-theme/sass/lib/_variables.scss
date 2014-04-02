@@ -5,44 +5,44 @@
 
 // Grays
 // -------------------------
-$black:                 #000;
+$black:                    #000;
 $grayDarker:            #222;
-$grayDark:              #333;
-$gray:                  #555;
-$grayLight:             #999;
-$grayLighter:           #eee;
-$white:                 #fff;
+$grayDark:               #333;
+$gray:                      #555;
+$grayLight:               #999;
+$grayLighter:            #eee;
+$white:                     #fff;
 
 
 // Accent colors
 // -------------------------
-$blue:                  #049cdb;
-$green:                 #46a546;
-$red:                   #9d261d;
-$yellow:                #ffc40d;
-$orange:                #f89406;
-$pink:                  #c3325f;
-$purple:                #7a43b6;
+$blue:                      #049cdb;
+$green:                     #46a546;
+$red:                        #9d261d;
+$yellow:                    #ffc40d;
+$orange:                   #f89406;
+$pink:                       #c3325f;
+$purple:                    #7a43b6;
 
 
 // Scaffolding
 // -------------------------
-$bodyBackground:            #fff;
+$bodyBackground:                #fff;
 $mainContentBackground:     #fff;
 
 // Links
 // -------------------------
-$baseLinkColor:                 #2930FF;
+$baseLinkColor:                  #2930FF;
 $baseLinkHover:                 darken($baseLinkColor, 15%);
 
 // Typography
 // -------------------------
-$sansFontFamily:            "Helvetica Neue", Helvetica, Arial, sans-serif;
-$serifFontFamily:           Georgia, "Times New Roman", Times, serif;
-$monoFontFamily:            Monaco, Menlo, Consolas, "Courier New", monospace;
+$sansFontFamily:          "Helvetica Neue", Helvetica, Arial, sans-serif;
+$serifFontFamily:            Georgia, "Times New Roman", Times, serif;
+$monoFontFamily:          Monaco, Menlo, Consolas, "Courier New", monospace;
 
-$baseFont:                  normal 14px/20px helvetica_regular, Helvetica, Arial, sans-serif;
-$baseColor:                 #000;
+$baseFont:                    normal 14px/20px helvetica_regular, Helvetica, Arial, sans-serif;
+$baseColor:                   #000;
 
 // Heading
 $heading_h1_font:           normal 22px/24px helvetica_bold, Helvetica, Arial, sans-serif;
@@ -59,86 +59,86 @@ $heading_h5_color:          #333;
 $heading_h6_color:          #333;
 
 // Page Title
-$pageTitleColor:            #333;
-$pageTitleFont:             normal 30px/36px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$pageTitleColor:               #333;
+$pageTitleFont:                normal 30px/36px "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 
 // Button - Default
 // -------------------------
 // if GRADIENT  button
-//$buttonStartColor:                #009FFC;
-//$buttonEndColor:                  #0079C1;
-$buttonBackground:                  transparent url(../images/bkg_btn.gif) no-repeat;
-$buttonSpanBackground:              transparent;
+//$buttonStartColor:                       #009FFC;
+//$buttonEndColor:                         #0079C1;
+$buttonBackground:                        transparent url(../images/bkg_btn.gif) no-repeat;
+$buttonSpanBackground:                 transparent;
 $buttonSpanSpanBackground:          transparent;
-$buttonTextColor:                   #fff;
-$buttonTextShadow:                  null;
-$buttonBorder:                      1px solid #ccc;
-$buttonFont:                        normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-$buttonBorderRadius:                null;
+$buttonTextColor:                             #fff;
+$buttonTextShadow:                         null;
+$buttonBorder:                                 1px solid #ccc;
+$buttonFont:                                     normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$buttonBorderRadius:                        null;
 
 // Other Button
 // -------------------------
-//$buttonStartColor:                  #009FFC;
-//$buttonEndColor:                    #0079C1;
-//$buttonBackground:                  #333;
-//$buttonTextColor:                   #fff;
-//$buttonTextShadow:                  #ccc;
-//$buttonBorder:                      1px solid #ccc;
-//$buttonFont:                        normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-//$buttonBorderRadius:                5px;
+//$buttonStartColor:                          #009FFC;
+//$buttonEndColor:                            #0079C1;
+//$buttonBackground:                        #333;
+//$buttonTextColor:                            #fff;
+//$buttonTextShadow:                         #ccc;
+//$buttonBorder:                                 1px solid #ccc;
+//$buttonFont:                                    normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$buttonBorderRadius:                       5px;
 
 // Forms
 // -------------------------
 
-$inputFont:                     normal 12px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
-$textareaFont:                  normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-$SelectFont:                    normal 15px/18px HelveticaNeue, Helvetica, sans-serif;
-$inputColor:                    #333;
-$inputBackground:               #fff url(../images/bkg_input.gif) 0 0 repeat-x;
-$inputBackgroundDisabled:       #d7d7d7;
-$inputColorDisabled:            #d7d7d7;
-$inputBorder:                   1px solid #ccc;
-$inputBorderRadius:             null;
-$inputPlaceHolderColor:         #555;
-$inputPlaceHolderBackground:    #ccc;
+$inputFont:                                        normal 12px/26px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$textareaFont:                                    normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$SelectFont:                                       normal 15px/18px HelveticaNeue, Helvetica, sans-serif;
+$inputColor:                                        #333;
+$inputBackground:                              #fff url(../images/bkg_input.gif) 0 0 repeat-x;
+$inputBackgroundDisabled:                  #d7d7d7;
+$inputColorDisabled:                            #d7d7d7;
+$inputBorder:                                      1px solid #ccc;
+$inputBorderRadius:                             null;
+$inputPlaceHolderColor:                        #555;
+$inputPlaceHolderBackground:              #ccc;
 
 // Sprite icons path
 // -------------------------
-$iconSpritePath:          url("../images/icon-sprite.png") no-repeat;
+$iconSpritePath:                url("../images/icon-sprite.png") no-repeat;
 
 // Hr border color
 // -------------------------
-$hrBorder:                $grayLighter;
+$hrBorder:                         $grayLighter;
 
 // Navigation
 // -------------------------
 
 $navbarBackground:            red;
-$navColor:                     #fff;
+$navColor:                          #fff;
 $navTextShadow:                null;
-$navFont:                      normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
-$navLinkColor:                 #fff;
-$navLinkHover:                 #fff;
-$navBackgroundHover:           #000;
+$navFont:                           normal 14px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+$navLinkColor:                    #fff;
+$navLinkHover:                    #fff;
+$navBackgroundHover:         #000;
 
 // Sub Navigation
 // -------------------------
 
-$subNavbarBackground:             #fff;
+$subNavbarBackground:       #fff;
 $subNavColor:                     #000;
-$subNavTextShadow:                null;
+$subNavTextShadow:           null;
 $subNavFont:                      normal 12px/16px "Helvetica Neue", Helvetica, Arial, sans-serif;
-$subNavLinkColor:                 #000;
-$subNavLinkHover:                 #000;
-$subNavBackgroundHover:           #333;
+$subNavLinkColor:               #000;
+$subNavLinkHover:               #000;
+$subNavBackgroundHover:    #333;
 
 
 // Pagination
 // -------------------------
 //$paginationBackground:                #fff;
-//$paginationBorder:                    1px solid #ccc;
-//$paginationActiveBackground:          #f5f5f5;
+//$paginationBorder:                        1px solid #ccc;
+//$paginationActiveBackground:        #f5f5f5;
 
 
 // Alerts

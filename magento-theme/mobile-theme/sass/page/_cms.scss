@@ -1,6 +1,6 @@
 .cms-home {
-  .std { display:none; }
-  section { padding-bottom:0; }
+  .std { display: none; }
+  section { padding-bottom: 0; }
 }
 
 .std {
@@ -10,35 +10,36 @@
   p,
   address,
   blockquote,
-  table { margin-bottom:1em; }
-  ul { list-style:disc outside; padding-left:1.5em; }
-  ol { list-style:decimal outside; padding-left:1.5em; }
-  ul ul { list-style-type:circle; }
+  table { margin-bottom: 1em; }
+  ul { list-style: disc outside; padding-left: 1.5em; }
+  ol { list-style: decimal outside; padding-left: 1.5em; }
+  ul ul { list-style-type: circle; }
   ul ul,
   ol ol,
   ul ol,
-  ol ul { margin:.5em 0; }
-  dt { font-weight:bold; }
-  dd { padding:0 0 0 1.5em; }
-  blockquote { font-style:italic; padding:0 0 0 1.5em; }
-  address { font-style:normal; }
+  ol ul { margin: .5em 0; }
+  dt { font-weight: bold; }
+  dd { padding: 0 0 0 1.5em; }
+  blockquote { font-style: italic; padding: 0 0 0 1.5em; }
+  address { font-style: normal; }
   b,
-  strong { font-weight:bold; }
+  strong { font-weight: bold; }
   i,
-  em { font-style:italic; }
-  hr { margin:1.5em 0; color:#d9d9d9; }
-  table { width:100%; max-width:100%;
-    thead { background:#e8e8e8; }
-    th { background:#f7f7f7; word-break:break-word; font-weight:bold; }
-    thead th { background:#e8e8e8; font-weight:bold; }
+  em { font-style: italic; }
+  hr { margin: 1.5em 0; color: #d9d9d9; }
+  table { width: 100%; max-width: 100%;
+    thead { background: #e8e8e8; }
+    th { background: #f7f7f7; word-break: break-word; font-weight: bold; }
+    thead th { background: #e8e8e8; font-weight: bold; }
     th,
-    td { padding:2px 4px; border:1px solid #d9d9d9; }
+    td { padding: 2px 4px; border: 1px solid #d9d9d9; }
   }
-  table[border="0"] { border-width:0;
+  table[border="0"] { border-width: 0;
     th,
-    td { border-width:0; }
+    td { border-width: 0; }
   }
 }
 
-ul.disc li { padding-left:10px; background:url(../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
-.std ul.disc li { padding-left:0; background:none; }
+ul.disc li { padding-left: 10px; background: url(../images/bkg_bulletsm.gif) no-repeat 0 0.5em; }
+
+.std ul.disc li { padding-left: 0; background: none; }

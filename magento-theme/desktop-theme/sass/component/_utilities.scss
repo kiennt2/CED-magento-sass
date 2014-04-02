@@ -12,13 +12,13 @@
 }
 
 .clearfix:after {
-  display:block;
-  content:".";
-  clear:both;
-  font-size:0;
-  line-height:0;
-  height:0;
-  overflow:hidden;
+  display: block;
+  content: ".";
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
   zoom: 1;
 }
 
@@ -91,4 +91,5 @@
 .new-product-spotlight .more-new .item,
 .addresses-list .col-2 li,
 .product-view .product-shop { @extend .clearfix; }
+
 /* ======================================================================================= */

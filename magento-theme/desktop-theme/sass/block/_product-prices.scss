@@ -1,103 +1,108 @@
 
-.price { white-space:nowrap !important; }
+.price { white-space: nowrap !important; }
 
 .price-box {
-  .price { font-weight:bold; }
+  .price { font-weight: bold; }
 }
 
-.price-box-bundle {}
+.price-box-bundle { }
 
 /* Regular price */
 .regular-price {
-  .price { font-weight:bold; }
+  .price { font-weight: bold; }
 }
 
 /* Old price */
-.old-price { text-decoration:line-through; color:#989696;
-  .price-label { white-space:nowrap; color:#989696; }
-  .price { font-weight:normal; text-decoration:line-through; color:#989696; }
+.old-price { text-decoration: line-through; color: #989696;
+  .price-label { white-space: nowrap; color: #989696; }
+  .price { font-weight: normal; text-decoration: line-through; color: #989696; }
 }
-.sidebar .old-price .price-label { display:none !important; }
+
+.sidebar .old-price .price-label { display: none !important; }
 
 /* Special price */
 .special-price {
-  .price-label { white-space:nowrap; color:#c73615; font-weight:bold; }
-  .price { font-weight:bold; color:#c73615; }
+  .price-label { white-space: nowrap; color: #c73615; font-weight: bold; }
+  .price { font-weight: bold; color: #c73615; }
 }
-.sidebar .special-price .price-label { display:none !important; }
+
+.sidebar .special-price .price-label { display: none !important; }
 
 /* Minimal price (as low as) */
 .minimal-price {
-  .price-label { white-space:nowrap; }
+  .price-label { white-space: nowrap; }
 }
 
-.minimal-price-link { display:block; margin:5px 0; text-decoration:none;
-  .label { font-weight:bold; }
-  .price { font-weight:bold; }
+.minimal-price-link { display: block; margin: 5px 0; text-decoration: none;
+  .label { font-weight: bold; }
+  .price { font-weight: bold; }
 }
-a.minimal-price-link:hover { text-decoration:underline; }
+
+a.minimal-price-link:hover { text-decoration: underline; }
 
 /* Excluding tax */
-.price-excluding-tax { display:block;
-  .label { white-space:nowrap; }
-  .price { font-weight:normal; }
+.price-excluding-tax { display: block;
+  .label { white-space: nowrap; }
+  .price { font-weight: normal; }
 }
 
 /* Including tax */
-.price-including-tax { display:block;
-  .label { white-space:nowrap; }
-  .price { font-weight:bold; }
+.price-including-tax { display: block;
+  .label { white-space: nowrap; }
+  .price { font-weight: bold; }
 }
 
 /* Configured price */
 .configured-price {
-  .price-label { font-weight:bold; white-space:nowrap; }
-  .price { font-weight:bold; }
+  .price-label { font-weight: bold; white-space: nowrap; }
+  .price { font-weight: bold; }
 }
 
 /* FPT */
-.weee { display:block; font-size:11px;
-  .price { font-size:11px; font-weight:bold; }
+.weee { display: block; font-size: 11px;
+  .price { font-size: 11px; font-weight: bold; }
 }
 
 /* Excl tax (for order tables) */
-.price-excl-tax { display:block;
-  .label { display:block; white-space:nowrap; }
-  .price { display:block; }
+.price-excl-tax { display: block;
+  .label { display: block; white-space: nowrap; }
+  .price { display: block; }
 }
 
 /* Incl tax (for order tables) */
-.price-incl-tax { display:block;
-  .label { display:block; white-space:nowrap; }
-  .price { display:block; font-weight:bold; }
+.price-incl-tax { display: block;
+  .label { display: block; white-space: nowrap; }
+  .price { display: block; font-weight: bold; }
 }
 
 /* Price range */
 .price-from {
-  .price-label { white-space:nowrap; }
-  .price { white-space:nowrap; }
+  .price-label { white-space: nowrap; }
+  .price { white-space: nowrap; }
 }
+
 .price-to {
-  .price { white-space:nowrap; }
-  .price-label { white-space:nowrap; }
+  .price { white-space: nowrap; }
+  .price-label { white-space: nowrap; }
 }
 
 /* Price as configured */
 .price-as-configured {
-  .price-label {white-space:nowrap; }
-  .price { font-size:14px; color:#e55100; }
+  .price-label { white-space: nowrap; }
+  .price { font-size: 14px; color: #e55100; }
 }
 
 /* Price notice next to the options */
-.price-notice { padding-left:10px;
-  .price { font-weight:bold; }
+.price-notice { padding-left: 10px;
+  .price { font-weight: bold; }
 }
+
 /********** Product Prices > */
 
 /* Tier Prices */
-.product-pricing { background:#fbf4de; border:1px solid #e2d4c7; padding:8px; margin:20px 0;
-  li { line-height:1.35; margin:2px 0;
-    .price { font-weight:bold; }
-    .benefit { font-weight:bold; }
+.product-pricing { background: #fbf4de; border: 1px solid #e2d4c7; padding: 8px; margin: 20px 0;
+  li { line-height: 1.35; margin: 2px 0;
+    .price { font-weight: bold; }
+    .benefit { font-weight: bold; }
   }
 }

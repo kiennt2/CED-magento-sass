@@ -1,45 +1,45 @@
-
 /* Global Messages */
-.messages { width:100%; overflow:hidden; text-align:left; margin-top:10px;
-  li { margin:0 0 10px; padding:0; word-wrap:break-word; }
-  ul { padding:10px 17px 18px; margin:0 0 -11px;position:relative; }
-  ul li { margin:0; padding:0 0 3px; }
-  a { text-decoration:underline; }
-  a:hover { text-decoration:none; }
+.messages { width: 100%; overflow: hidden; text-align: left; margin-top: 10px;
+  li { margin: 0 0 10px; padding: 0; word-wrap: break-word; }
+  ul { padding: 10px 17px 18px; margin: 0 0 -11px; position: relative; }
+  ul li { margin: 0; padding: 0 0 3px; }
+  a { text-decoration: underline; }
+  a:hover { text-decoration: none; }
   li.error-msg,
   li.success-msg,
   li.note-msg,
-  li.notice-msg { border:$alertBorder !important; font:$alertsFont !important; }
+  li.notice-msg { border: $alertBorder !important; font: $alertsFont !important; }
 }
 
-p.error-msg { border:$errorBorder !important;font:$alertsFont !important;  padding:10px; margin:10px 0; }
+p.error-msg { border: $errorBorder !important; font: $alertsFont !important; padding: 10px; margin: 10px 0; }
 
 /* Error Message */
-.messages li.error-msg { border: $errorBorder; background: $errorBackground; color:$errorText;
-  a { color:$errorText; }
+.messages li.error-msg { border: $errorBorder; background: $errorBackground; color: $errorText;
+  a { color: $errorText; }
   ul { /* background-image:url(../images/bkg_msg-error.gif); */ }
 }
-p.error-msg { border: $errorBorder; background-color:$errorBackground; color:$errorText; }
+
+p.error-msg { border: $errorBorder; background-color: $errorBackground; color: $errorText; }
 
 /* Success Message */
-.messages li.success-msg { border:$successBorder; background-color:$successBackground; color:$successText;
-  a { color:$successText; }
+.messages li.success-msg { border: $successBorder; background-color: $successBackground; color: $successText;
+  a { color: $successText; }
   ul { /* background-image:url(../images/bkg_msg-success.gif); */ }
 }
 
 /* Notification Message */
 .messages {
-  li.note-msg { border:$infoBorder; background-color:$infoBackground; color:$infoText;
-    a { color:$infoText; }
+  li.note-msg { border: $infoBorder; background-color: $infoBackground; color: $infoText;
+    a { color: $infoText; }
   }
-  li.notice-msg { border:$warningBorder; background-color:$warningBackground; color:$warningText;
-    a { color:$warningText; }
+  li.notice-msg { border: $warningBorder; background-color: $warningBackground; color: $warningText;
+    a { color: $warningText; }
   }
   li.note-msg ul,
   li.notice-msg ul { /* background-image:url(../images/bkg_msg-note.gif); */ }
 }
 
 /* std class reset */
-.std .messages { margin-top:0; width:auto; list-style:none !important; padding:0 !important; margin-bottom:0 !important;
-  ul { list-style:none !important; padding-left:17px !important; margin:0 0 -11px !important; }
+.std .messages { margin-top: 0; width: auto; list-style: none !important; padding: 0 !important; margin-bottom: 0 !important;
+  ul { list-style: none !important; padding-left: 17px !important; margin: 0 0 -11px !important; }
 }

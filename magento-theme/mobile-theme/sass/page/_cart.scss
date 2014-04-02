@@ -1,105 +1,105 @@
-.cart .page-title.title-buttons { height:auto; padding:0;
-  h1 { padding:10px 15px; }
-  .checkout-types { padding:15px; }
+.cart .page-title.title-buttons { height: auto; padding: 0;
+  h1 { padding: 10px 15px; }
+  .checkout-types { padding: 15px; }
 }
 
-.cart-table { border-spacing:0; border-collapse:collapse; width:100%;
-  td { padding:10px; vertical-align:top; }
-  td:first-child { width:75px; }
-  .price-box { display:table; width:100%; }
+.cart-table { border-spacing: 0; border-collapse: collapse; width: 100%;
+  td { padding: 10px; vertical-align: top; }
+  td:first-child { width: 75px; }
+  .price-box { display: table; width: 100%; }
 
-  .cart-price-box { display:table-cell; text-align:left; vertical-align:middle;
-    .cart-price { font-size:12px; display:block; }
-    .cart-price + .cart-price { margin:5px 0 0; padding:5px 0 0; }
-    + .cart-price-box { margin-left:10px; text-align:right; }
-    + .cart-price-box .cart-price { color:#424242; font-size:15px; font-weight:bold; }
+  .cart-price-box { display: table-cell; text-align: left; vertical-align: middle;
+    .cart-price { font-size: 12px; display: block; }
+    .cart-price + .cart-price { margin: 5px 0 0; padding: 5px 0 0; }
+    + .cart-price-box { margin-left: 10px; text-align: right; }
+    + .cart-price-box .cart-price { color: #424242; font-size: 15px; font-weight: bold; }
   }
 
-  .qty-wrap { display:table-cell; vertical-align:top; width:55px; }
-  .qty { font-size:13px; text-align:center; vertical-align:middle; width:35px; }
-  .qty + span { font-size:12px; margin:0 2px; vertical-align:middle; }
-  .gift-registry-name { font-size:12px; margin:-12px 0 10px; }
-  .btn-remove { float:right; position:relative; top:0; right:-5px; }
+  .qty-wrap { display: table-cell; vertical-align: top; width: 55px; }
+  .qty { font-size: 13px; text-align: center; vertical-align: middle; width: 35px; }
+  .qty + span { font-size: 12px; margin: 0 2px; vertical-align: middle; }
+  .gift-registry-name { font-size: 12px; margin: -12px 0 10px; }
+  .btn-remove { float: right; position: relative; top: 0; right: -5px; }
 
   .messages {
-    td { background-color:#444 !important; color:#fff; font-size:12px; padding:0 10px 10px; text-shadow:0 1px 0 #111; }
-    p { margin:10px 0 0; }
+    td { background-color: #444 !important; color: #fff; font-size: 12px; padding: 0 10px 10px; text-shadow: 0 1px 0 #111; }
+    p { margin: 10px 0 0; }
   }
 
-  .product-image { display:block; margin:0 0 10px; vertical-align:top; }
-  .product-name { color:#424242; font-size:18px; line-height:22px; margin:0 0 15px; }
-  .product-name a { color:#424242; }
+  .product-image { display: block; margin: 0 0 10px; vertical-align: top; }
+  .product-name { color: #424242; font-size: 18px; line-height: 22px; margin: 0 0 15px; }
+  .product-name a { color: #424242; }
 
-  tfoot button + button { margin:10px 0 0; }
-  .downloadable { margin:10px 0 0; }
+  tfoot button + button { margin: 10px 0 0; }
+  .downloadable { margin: 10px 0 0; }
   .product-options {
-    td { background:none; padding:0; }
-    .toggle { cursor:pointer; display:inline-block; margin:10px; }
-    .item-options { padding:10px; }
+    td { background: none; padding: 0; }
+    .toggle { cursor: pointer; display: inline-block; margin: 10px; }
+    .item-options { padding: 10px; }
   }
 
-  .toggle { font-size:13px; display:inline-block; }
+  .toggle { font-size: 13px; display: inline-block; }
 }
 
 .cart-collaterals {
-  h2 { color:#424242; font-size:15px; font-weight:normal; line-height:18px; margin:0 0 5px; }
-  label { display:none; }
-  button { background:none; color:#1394ca; display:inline-block; border:0; font-size:15px; margin:0; padding:5px; text-decoration:underline; vertical-align:middle; }
-  button + button { margin:5px 0 0; padding:5px 0; }
-  .v-fix { display:inline-block; margin-right:5px; vertical-align:middle; width:60%; }
-  .v-fix + button { vertical-align:top; }
+  h2 { color: #424242; font-size: 15px; font-weight: normal; line-height: 18px; margin: 0 0 5px; }
+  label { display: none; }
+  button { background: none; color: #1394ca; display: inline-block; border: 0; font-size: 15px; margin: 0; padding: 5px; text-decoration: underline; vertical-align: middle; }
+  button + button { margin: 5px 0 0; padding: 5px 0; }
+  .v-fix { display: inline-block; margin-right: 5px; vertical-align: middle; width: 60%; }
+  .v-fix + button { vertical-align: top; }
 
-  .discount { margin:0 0 10px; }
+  .discount { margin: 0 0 10px; }
   .giftcard .error-msg,
-  .giftcard .please-wait { display:block; font-size:12px; line-height:15px; margin:0 0 5px; }
-  .btn-gift-registry { margin:10px 0 0; }
+  .giftcard .please-wait { display: block; font-size: 12px; line-height: 15px; margin: 0 0 5px; }
+  .btn-gift-registry { margin: 10px 0 0; }
 }
 
 .cart .totals,
-.cart .checkout-types { padding:15px; }
+.cart .checkout-types { padding: 15px; }
 
 .cart .checkout-types {
-  a { font-size:12px; display:block; margin:5px 0 0; padding:5px; text-decoration:underline; }
-  li { margin:0 0 10px; text-align:center; }
-  li .paypal-or { padding:5px 0; }
+  a { font-size: 12px; display: block; margin: 5px 0 0; padding: 5px; text-decoration: underline; }
+  li { margin: 0 0 10px; text-align: center; }
+  li .paypal-or { padding: 5px 0; }
 }
 
-.cart .totals table { border-spacing:0; border-collapse:collapse; font-size:13px; width:100%;
+.cart .totals table { border-spacing: 0; border-collapse: collapse; font-size: 13px; width: 100%;
   th,
-  td { padding:5px; }
-  .price { white-space:nowrap; }
-  .btn-remove { height:20px; width:20px; vertical-align:bottom; }
-  .btn-remove img { display:none; }
-  .summary-total  {
-    .summary-collapse { display:inline-block; border-bottom:1px dashed; }
-    .summary-collapse:before { content:'+'; display:inline-block; margin-right:5px; }
-    &.show-details .summary-collapse:before { content:'-'; }
+  td { padding: 5px; }
+  .price { white-space: nowrap; }
+  .btn-remove { height: 20px; width: 20px; vertical-align: bottom; }
+  .btn-remove img { display: none; }
+  .summary-total {
+    .summary-collapse { display: inline-block; border-bottom: 1px dashed; }
+    .summary-collapse:before { content: '+'; display: inline-block; margin-right: 5px; }
+    &.show-details .summary-collapse:before { content: '-'; }
   }
 }
 
-.failed-products { border-bottom:1px solid #eae8ea; margin:10px 0 0; padding:0 0 10px;
-  h2 { font-weight:bold; }
-  .cart-table thead { display:none; }
+.failed-products { border-bottom: 1px solid #eae8ea; margin: 10px 0 0; padding: 0 0 10px;
+  h2 { font-weight: bold; }
+  .cart-table thead { display: none; }
 }
 
 .checkout-success,
-.paypal-review-order { padding:15px; }
+.paypal-review-order { padding: 15px; }
 
 .paypal-review-order {
-  .info-set { margin:0 0 15px; }
-  .buttons-set button + button { margin:10px 0 0; }
-  .buttons-set .please-wait { display:block; font-size:12px; padding:10px; text-align:center; }
+  .info-set { margin: 0 0 15px; }
+  .buttons-set button + button { margin: 10px 0 0; }
+  .buttons-set .please-wait { display: block; font-size: 12px; padding: 10px; text-align: center; }
 }
 
-.paypal-review-order .data-table { border:1px solid #eee; border-spacing:0; border-collapse:collapse; font-size:13px; margin:15px 0; width:100%;
-  tfoot { background:#eee; }
-  th { text-align:left; }
-  th { border-bottom:1px solid #eee; padding:5px; }
-  th:last-child { text-align:right; }
-  td { border-bottom:1px solid #eee; padding:5px; vertical-align:top; }
+.paypal-review-order .data-table { border: 1px solid #eee; border-spacing: 0; border-collapse: collapse; font-size: 13px; margin: 15px 0; width: 100%;
+  tfoot { background: #eee; }
+  th { text-align: left; }
+  th { border-bottom: 1px solid #eee; padding: 5px; }
+  th:last-child { text-align: right; }
+  td { border-bottom: 1px solid #eee; padding: 5px; vertical-align: top; }
 }
 
 .checkout-success {
-  .sub-title { color:#424242; font-size:18px; line-height:22px; margin:0 0 15px; }
-  p { margin:10px 0; }
+  .sub-title { color: #424242; font-size: 18px; line-height: 22px; margin: 0 0 15px; }
+  p { margin: 10px 0; }
 }

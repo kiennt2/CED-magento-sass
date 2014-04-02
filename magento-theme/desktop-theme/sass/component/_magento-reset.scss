@@ -24,39 +24,55 @@
  */
 /* Reset ================================================================================= */
 
-body          { background:$bodyBackground; font: $baseFont; color: $baseColor; text-align:center; @include text-size-adjust(none);}
+body { background: $bodyBackground; font: $baseFont; color: $baseColor; text-align: center; @include text-size-adjust(none); }
 
-a             { color: $baseLinkColor; text-decoration:underline; }
-a:hover       { text-decoration:none; color: $baseLinkHover;}
-:focus        { outline:0; }
+a { color: $baseLinkColor; text-decoration: underline; }
+
+a:hover { text-decoration: none; color: $baseLinkHover; }
+
+:focus { outline: 0; }
 
 /* Headings */
-h1            { font: $heading_h1_font; color: $heading_h1_color;}
-h2            { font: $heading_h2_font; color: $heading_h2_color;}
-h3            { font: $heading_h3_font; color: $heading_h3_color;}
-h4            { font: $heading_h4_font; color: $heading_h4_color;}
-h5            { font: $heading_h5_font; color: $heading_h5_color;}
-h6            { font: $heading_h6_font; color: $heading_h6_color;}
+h1 { font: $heading_h1_font; color: $heading_h1_color; }
+
+h2 { font: $heading_h2_font; color: $heading_h2_color; }
+
+h3 { font: $heading_h3_font; color: $heading_h3_color; }
+
+h4 { font: $heading_h4_font; color: $heading_h4_color; }
+
+h5 { font: $heading_h5_font; color: $heading_h5_color; }
+
+h6 { font: $heading_h6_font; color: $heading_h6_color; }
 
 /* Forms */
-form          { display:inline; }
-fieldset      { border:0; }
-legend        { display:none; }
+form { display: inline; }
+
+fieldset { border: 0; }
+
+legend { display: none; }
 
 /* Table */
-table         { border:0; border-collapse:collapse; border-spacing:0; empty-cells:show; font-size:100%; }
-caption,th,td { vertical-align:top; text-align:left; font-weight:normal; }
+table { border: 0; border-collapse: collapse; border-spacing: 0; empty-cells: show; font-size: 100%; }
+
+caption, th, td { vertical-align: top; text-align: left; font-weight: normal; }
 
 /* Content */
-address       { font-style:normal; }
-cite          { font-style:normal; }
+address { font-style: normal; }
+
+cite { font-style: normal; }
+
 q,
-blockquote    { quotes:none; }
+blockquote { quotes: none; }
+
 q:before,
-q:after       { content:''; }
-small         { font-size:10px; }
-big           { font-size:1.2em; }
+q:after { content: ''; }
+
+small { font-size: 10px; }
+
+big { font-size: 1.2em; }
+
 /*sup           { font-size:1em; vertical-align:top; }/*/
 
 /* Lists */
-ul,ol         { list-style:none; }
+ul, ol { list-style: none; }

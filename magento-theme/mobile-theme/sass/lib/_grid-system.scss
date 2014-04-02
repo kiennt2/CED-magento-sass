@@ -1,16 +1,16 @@
 /* #Variable Definitions
 ================================================== */
 
-  // Fix Grid
-  $grid-width: 960px;
-  $totals-columns: 12;
-  $gutter: 10px;
+// Fix Grid
+$grid-width: 960px;
+$totals-columns: 12;
+$gutter: 10px;
 
-  /* Fluid Grid
-    $grid-width: 100%;
-    $totals-columns: 12;
-    $gutter: 1%;
-  */
+/* Fluid Grid
+  $grid-width: 100%;
+  $totals-columns: 12;
+  $gutter: 1%;
+*/
 
 @mixin full-width {
   width: 100%;
@@ -53,6 +53,7 @@
   }
   width: math-column-width($num, $grid-width);
 }
+
 // Example
 //  3 col - margin: 0 $gutter
 //.columns-x { @include columns(3) }
@@ -60,6 +61,7 @@
 //.columns-x { @include columns(3,true) }
 
 @mixin alpha { margin-left: 0; }
+
 @mixin omega { margin-right: 0; }
 
 /* Prefix Extra Space */
@@ -85,7 +87,7 @@
 }
 
 /* colum base - margin = 0 */
-@mixin columns-base ($num: 1) {
+@mixin columns-base($num: 1) {
   @include column;
   width: $num * ($grid-width / $totals-columns);
   margin-left: 0;

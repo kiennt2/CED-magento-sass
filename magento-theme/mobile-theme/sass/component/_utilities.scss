@@ -1,18 +1,20 @@
 
-.std { clear:both; margin:10px 0; }
+.std { clear: both; margin: 10px 0; }
 
-.a-left { text-align:left; }
-.a-center { text-align:center; }
-.a-right { text-align:right; }
+.a-left { text-align: left; }
+
+.a-center { text-align: center; }
+
+.a-right { text-align: right; }
 
 .border-box {
   @include box-sizing(border-box);
 }
 
 .bg-shadow {
-  background:url(../images/bg_shadow.png) repeat-x 0 0;
+  background: url(../images/bg_shadow.png) repeat-x 0 0;
   @include retina-display {
-    background:url(../images/bg_shadow_retina.png) repeat-x 0 0;
+    background: url(../images/bg_shadow_retina.png) repeat-x 0 0;
   }
 }
 
@@ -21,12 +23,12 @@
 }
 
 .clearfix:after {
-  display:block;
-  content:".";
-  clear:both;
-  font-size:0;
-  line-height:0;
-  height:0;
-  overflow:hidden;
+  display: block;
+  content: ".";
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
   zoom: 1;
 }
